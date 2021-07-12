@@ -1,6 +1,0 @@
-jobs:
-- job: Linux
-  pool:
-    vmImage: 'Self-hosted Windows Agent'
-  steps:
-  - script: echo hello from Linux
