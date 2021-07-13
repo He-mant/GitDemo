@@ -15,7 +15,7 @@ steps:
   inputs:
     SourceFolder: $(system.defaultworkingdirectory)/DevopsBasics-master/
     Contents: '**'
-    TargetFolder: $(build.artifactstagingdirectory)   
+    TargetFolder: $(system.defaultworkingdirectory) 
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
