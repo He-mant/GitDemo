@@ -10,12 +10,6 @@ pool: Self-hosted Windows Agent
 
 
 steps:
-- task: CopyFiles@2
-  displayName: Copy Files
-  inputs:
-    SourceFolder: $(system.defaultworkingdirectory)/DevopsBasics-master/
-    Contents: '**'
-    TargetFolder: $(system.defaultworkingdirectory) 
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
