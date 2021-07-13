@@ -4,8 +4,9 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- master
+- none
 
 pool: Self-hosted Windows Agent
 
-
+steps:
+  - bash: echo "Hello World"
